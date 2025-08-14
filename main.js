@@ -130,7 +130,7 @@ requestAnimationFrame(update);
  * here because requestAnimationFrame runs as fast as possible, whereas
  * setInterval allows us to control the spawn rate in milliseconds.
  */
-const SPAWN_INTERVAL = 7500; // spawn a new word every 2.5 seconds
+const SPAWN_INTERVAL = 5000; // spawn a new word every 2.5 seconds
 const spawnTimer = setInterval(() => {
   if (gameRunning) {
     spawnWord();
