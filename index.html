@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Typing Game</title>
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Aadhi's Hacker Typing Game</h1>
+    <p class="instructions">
+      Type the words before they reach the bottom and hack into the system!
+    </p>
+    <div id="scoreboard">
+      Score:
+      <span id="score">0</span>
+      &nbsp;|&nbsp; Lives:
+      <span id="lives">3</span>
+    </div>
+
+    <!-- Game area where words will fall -->
+    <div id="gameContainer"></div>
+
+    <!-- Display the characters the player has typed -->
+    <div id="typedWrapper">
+      <strong>Typed:</strong> <span id="typedDisplay"></span>
+    </div>
+
+    <!-- Game over screen (hidden by default) -->
+    <div id="gameOver" class="hidden">
+      <h2>Game Over!</h2>
+      <p id="finalScore"></p>
+      <button id="restartButton">Restart</button>
+    </div>
+
+    <!-- Include the game logic -->
+    <script src="main.js"></script>
+  </body>
+</html>

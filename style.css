@@ -1,0 +1,120 @@
+/*
+ * Stylesheet for the Hacker Typing Game.
+ *
+ * This file defines the look and feel of the game. We embrace a dark,
+ * futuristic aesthetic with neon-green highlights to evoke a classic
+ * “hacker” vibe. The falling words are positioned absolutely within
+ * the game container, and the scoreboard and typed input areas are
+ * clearly visible to keep the player informed.
+ */
+
+/* Base page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  /* Use the generated background image to set the mood */
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Instructions under the title */
+.instructions {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #aaffaa;
+}
+
+/* Scoreboard displaying score and lives */
+#scoreboard {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Container that holds falling words */
+#gameContainer {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  border: 2px solid #00ff00;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Individual falling words */
+.word {
+  position: absolute;
+  color: #00ff00;
+  font-size: 22px;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Wrapper for typed input display */
+#typedWrapper {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+/* Area showing what the player has typed */
+#typedDisplay {
+  color: #ffffff;
+}
+
+/* Hidden class used to hide the game-over overlay until needed */
+.hidden {
+  display: none;
+}
+
+/* Game-over overlay styling */
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 30px;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  text-align: center;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* Restart button styling */
+#restartButton {
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: 18px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#restartButton:hover {
+  background-color: #00cc00;
+}
